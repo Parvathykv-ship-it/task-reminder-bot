@@ -26,10 +26,9 @@ def send_reminder():
     print("Reminder email sent!")
 
 
-schedule.every().day.at("7:00").do(send_reminder)
+schedule.every().day.at("19:00").do(send_reminder)
 
 print("Bot running...")
 
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+if __name__ == "__main__":
+    send_reminder()
