@@ -9,7 +9,7 @@ APP_PASSWORD = os.environ["APP_PASSWORD"]
 
 def send_reminder():
 
-    with open("taskbotreminder/tasks.txt", "r") as f:
+    with open("tasks.txt", "r") as f:
         tasks = f.read()
 
     msg = EmailMessage()
